@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+*{
+    font-family: "Tektur", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  @keyframes slide {
+  0%, 100% { transform: translateX(0); }
+  33% { transform: translateX(-33.3333%); }
+  66% { transform: translateX(-66.6666%); }
+}
+
+.animate-slide {
+  animation: slide 20s infinite ease-in-out;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printable, .printable * {
+    visibility: visible;
+  }
+  .printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
