@@ -43,10 +43,7 @@ export const printPrescriptionApi = async(prescriptionId) =>{
 
 // get all prescriptions
 export const getAllPrescriptionsApi = async (token) => {
-  return await commonApi(
-    "GET",
-    `${serverUrl}/prescriptions`,
-    null,
+  return await commonApi( "GET", `${serverUrl}/api/prescriptions`,null,
     {
       Authorization: `Bearer ${token}`
     }
