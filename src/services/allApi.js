@@ -1,5 +1,5 @@
 import { commonApi } from "./commonApi"
-import { serverUrl } from "./serverUrl"
+import { serverUrl } from "./server"
 
 
 //register
